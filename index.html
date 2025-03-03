@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+
+	  
 	  </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	  
@@ -102,23 +104,14 @@
 		          <div class="col-md-12 heading-section ftco-animate">
 		          	<h1 class="big">About</h1>
 		            <h2 class="mb-4">About Me</h2>
-		            <p style >Michael Kimulu is a talented and accomplished freelance web developer
-						known for his expertise in creating compelling websites for businesses. With
-						a passion for delivering value to his customers, Michael's main goal is to
-						ensure productivity and excellence in every project he undertakes.<br><hr>
-						Having a remarkable track record in the field, Michael's skills were recently
-						showcased when he successfully built a top-notch website for Eldoret
-						Football Club. The Club President was exceedingly pleased with the final
-						outcome, praising Michael for his creativity and attention to detail.
-						Furthermore, Michael's technical prowess shone through when he managed
-						to significantly improve the loading time of Wimo Adventures' website. By
-						implementing various optimization techniques, he successfully reduced the
-						website's loading time from 2.0 seconds to an impressive 0.6 seconds, greatly
-						enhancing the user experience for Wimo Adventures' visitors.<br><hr>
-						With a dedication to staying up-to-date with the latest trends and
-						technologies in web development, his commitment to excellence and
-						customer satisfaction makes him a reliable and valued partner for any
-						business seeking to establish a strong online presence.</p>
+		            <p style >Are you looking for a website that truly represents your brand, engages visitors, and drives results? I specialize in creating responsive, high-performing websites that not only look great but also work seamlessly across all devices.
+
+						<br>Whether you need a sleek portfolio, a dynamic business site, or a fast-loading eCommerce platform, I can turn your vision into reality. My expertise in modern web technologies ensures that your website is user-friendly, visually stunning, and optimized for performance.
+						
+						<br>I’ve helped businesses like Eldoret Football Club establish a strong online presence with a top-tier website, earning praise for creativity and precision. I also improved Wimo Adventures' website speed from 2.0 seconds to just 0.6 seconds, significantly enhancing user experience and engagement.
+						
+						Let’s build something great together. Check out my work <a href="#projects-section">Here</a>, and let’s talk about how I can bring your ideas to life!
+						</p>
 		          </div>
 		        </div>
 	          <div class="counter-wrap ftco-animate d-flex mt-md-3">
@@ -340,16 +333,7 @@
 			</div>
 		
 		  </div>
-		  
-		<div class="row justify-content-center pb-5">
-			<div class="col-md-12 heading-section text-center ftco-animate">
-				
-				<h2 class="mb-4">Other Projects</h2>
-			  </div>
-		  </div>
-
-
-
+<!--
     		<div class="row">
 				<div class="col-md-3">
     				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/yellow\ therapist.JPG);">
@@ -388,11 +372,13 @@
     				</div>
   				</div>
 				  
-    		</div>
+    		</div> --->
+
+
 			<div class="row justify-content-center pb-5">
 				<div class="col-md-12 heading-section text-center ftco-animate">
 					
-					<p><a href="https://github.com/Kimulu?tab=repositories" class="btn btn-primary py-3 px-3">Click to View Other Github Projects</a></p>
+					<p><a href="https://blueillustrate.pythonanywhere.com/" class="btn btn-primary py-3 px-3">Click to View Current Project</a></p>
 				  </div>
 			  </div>
 	
@@ -550,6 +536,21 @@
 	setInterval(updateTimer, 1000); // Update every second
   </script>
 
+ <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navbarToggler = document.querySelector(".navbar-toggler");
+            const navLinks = document.querySelectorAll(".nav-link");
+            const navbarCollapse = document.querySelector("#ftco-nav");
+            
+            navLinks.forEach(link => {
+                link.addEventListener("click", function () {
+                    if (navbarToggler.getAttribute("aria-expanded") === "true") {
+                        navbarToggler.click();
+                    }
+                });
+            });
+        });
+    </script>
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
